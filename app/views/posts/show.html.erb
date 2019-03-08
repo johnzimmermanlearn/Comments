@@ -1,0 +1,7 @@
+<div class="list-group">
+  <%= render @post %>
+</div>
+<%= render 'comments/form', comment: current_user.comments.new(commentable: @post) %>
+<div class="list-group">
+ <%= render @post.comments %>
+</div>

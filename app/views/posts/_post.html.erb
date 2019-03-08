@@ -1,0 +1,17 @@
+<div class="list-group-item clearfix">
+  <div class="col-md-11">
+    <div class="list-group-item-heading">
+      <h3><%= link_to post.headline, post.url %></h3>
+    </div>
+    <p class="list-group-item-text">
+      Posted <%= time_ago_in_words post.created_at %> ago by <%= post.user.email %>
+    </p>
+    <p>
+      <%= link_to 'View', post_path(post) %>
+      |
+      <%= link_to 'Edit', edit_post_path(post) %>
+      |
+      <%= link_to 'Delete', post_path(post), method: :delete %>
+    </p>
+  </div>
+</div>

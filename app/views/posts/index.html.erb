@@ -1,0 +1,8 @@
+<h2>Posts</h2>
+
+<div class="col-md-9 list-group">
+  <%= render @posts %>
+</div>
+<div class="col-md-3">
+  <%= link_to 'New Post', new_post_path, class: 'btn btn-success' %>
+</div>

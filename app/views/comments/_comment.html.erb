@@ -1,0 +1,12 @@
+<div class="list-group-item">
+ <div class="list-group-item-text">
+ <h4 class="list-group-item-heading">
+ <%= comment.user.email %>
+ <%= time_ago_in_words comment.created_at %> ago
+ </h4>
+ <%= simple_format comment.body %>
+ <div class="list-group">
+ <%= render comment.comments %>
+ </div>
+ </div>
+</div>
